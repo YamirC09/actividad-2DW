@@ -1,0 +1,169 @@
+/* Paleta de Colores */
+:root {
+    --azul-barca: #004D98;
+    --rojo-barca: #A50044;
+    --amarillo-barca: #EDBB00;
+    --blanco: #FFFFFF;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--blanco);
+    color: var(--azul-barca);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+/* Header */
+header {
+    background-color: var(--azul-barca);
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--blanco);
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--rojo-barca);
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('camp-nou.jpg') no-repeat center center/cover;
+    color: var(--blanco);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.btn-cta {
+    background-color: var(--rojo-barca);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: var(--amarillo-barca);
+}
+
+/* Sección de Historia */
+.history {
+    padding: 3rem 2rem;
+    background-color: var(--azul-barca);
+    color: var(--blanco);
+    text-align: center;
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.timeline-item {
+    background-color: var(--rojo-barca);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 150px;
+}
+
+/* Sección de Jugadores */
+.players {
+    padding: 3rem 2rem;
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.player-card {
+    text-align: center;
+}
+
+.player-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Sección de Noticias */
+.news {
+    padding: 3rem 2rem;
+    background-color: var(--azul-barca);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.news-card {
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--rojo-barca);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: var(--blanco);
+}
